@@ -1,0 +1,32 @@
+
+
+
+.content {
+    background-color: rgba(65, 82, 69, 0.87);
+    max-width: 970px;
+    margin: auto;
+}
+
+.centerImage {
+   padding: 10px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   border: 4px solid darkcyan;
+}
+    
+a {
+    color: rgb(255, 166, 82);
+}
+    
+a:hover {
+    color:darkcyan;
+    transition: all 1.5s ease;
+}
+    
+    
+.in-page-links {
+    text-align: center;
+    
+}
