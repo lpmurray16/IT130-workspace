@@ -6,6 +6,7 @@
     dark-light grey: #777373
 */
 body {
+  background-color: #777373;
   font-family: "Poppins", sans-serif;
 }
 
@@ -14,15 +15,28 @@ body {
   text-align: center;
   margin: auto;
   width: 100%;
+  color: #d18a70;
+  font-size: 25px;
 }
 
-.selfie img {
-  padding: 10px;
+.container-main {
+  width: 600px;
+  height: 350px;
+}
+
+.left-box{
+  width: 50%;
+  height: 100%;
+}
+
+.selfie {
   display: block;
+  height: 50%;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  border: 4px solid darkcyan;
+  float: left;
+  border: 3px solid #403c3c;
 }
 
 .nav ul {
