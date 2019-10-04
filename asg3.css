@@ -5,9 +5,26 @@
     fleshy red: #d18a70
     dark-light grey: #777373
 */
-body {
+html, body {
   background-color: #777373;
+  position: relative;
   font-family: "Poppins", sans-serif;
+  padding: 10px;
+  padding-bottom: 60px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+header {
+  text-align: center;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .main-header {
@@ -19,25 +36,31 @@ body {
   font-size: 25px;
 }
 
-.container-main {
-  width: 600px;
-  height: 350px;
+.container {
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 60px;
 }
 
-.left-box{
-  width: 50%;
-  height: 100%;
+.left-box {
+  float: left;
+  margin: 3px;
+}
+
+.right-box {
+  float: left;
+  margin: 3px;
 }
 
 .selfie {
+  width: 20%;
+  height: 30%;
   display: block;
-  height: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  float: left;
-  border: 3px solid #403c3c;
+  margin: 5px;
 }
+
 
 .nav ul {
   list-style: none;
