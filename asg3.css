@@ -19,6 +19,7 @@ html, body {
 
 header {
   text-align: center;
+  color: #f58f13;
 }
 
 footer {
@@ -27,38 +28,31 @@ footer {
   width: 100%;
 }
 
-.main-header {
-  display: block;
-  text-align: center;
-  margin: auto;
+
+.col-container {
   width: 100%;
-  color: #d18a70;
-  font-size: 25px;
+  display: table;
 }
 
-.container {
-  min-height: 100vh;
-  overflow: hidden;
-  display: block;
-  position: relative;
-  padding-bottom: 60px;
+.col {
+  display: table-cell;
+  padding: 4px;
+  width: 30%;
 }
 
-.left-box {
-  float: left;
-  margin: 3px;
+h5 {
+    color: #f58f13;
 }
-
-.right-box {
-  float: left;
-  margin: 3px;
+p {
+    display: inline-block;
 }
 
 .selfie {
-  width: 20%;
-  height: 30%;
-  display: block;
+  max-width: 40%;
+  max-height: 20%;
+  float: left;
   margin: 5px;
+  border: 4px solid #d18a70;
 }
 
 
