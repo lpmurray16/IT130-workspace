@@ -62,6 +62,18 @@ footer {
   margin-left: auto;
 }
 
+.bttn {
+  color: white;
+  background-color: #403c3c;
+  border: 1px solid #888;
+  max-width: 20%;
+  max-height: 10%;
+  cursor: pointer;
+}
+.bttn:hover {
+  background-color: #f58f13;
+}
+
 h2, h5 {
   color: #f58f13;
 }
@@ -98,7 +110,7 @@ h2, h5 {
 }
 
 a {
-  color: #68d65e;
+  color: #0b57ad;
 }
 
 a:hover {
