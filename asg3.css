@@ -20,6 +20,7 @@ body {
 header {
   text-align: center;
   color: #f58f13;
+  
 }
 
 footer {
@@ -40,6 +41,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
   grid-auto-rows: minmax(100px, auto);
+  margin-top: 1em;
 }
 .wrapper-1-1 {
   display: grid;
@@ -52,6 +54,13 @@ footer {
 .box {
   padding: 1em;
   background-color: #888
+}
+
+.websites {
+  grid-column: 1/1;
+}
+.quotes {
+  grid-column: 2/4;
 }
 
 
@@ -78,11 +87,11 @@ footer {
   color: white;
   background-color: #403c3c;
   border: 1px solid #888;
-  max-width: 20%;
-  max-height: 10%;
+  max-width: 25%;
+  max-height: 15%;
   cursor: pointer;
-  padding: 4px;
-  margin-left: 30%;
+  padding: 1em;;
+  margin: 1em auto;
 }
 .bttn:hover {
   background-color: #f58f13;
