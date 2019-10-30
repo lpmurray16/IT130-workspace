@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css" type="text/css" />
+  <title>Loan Calc</title>
+</head>
+<body>
+    <nav class="nav-blocks">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="area.html">Area</a></li>
+          <li><a href="loan.html">Loan</a></li>
+          <li><h2>by: Logan Murray</h2></li>
+        </ul>
+      </nav>
+      
+      <h1 class="top-header">CALCULATE A LOAN PAYMENT</h1>
+      
+      <div class="left-side">
+        <form name="loanForm">
+          <h5>Enter a loan amount (principal): </h5>
+          <input name="amount" type="number" />
+    
+          <h5>Enter an interest rate as a percentage (decimal): </h5>
+          <input name="interest" type="number" />
+
+          <h5>enter the length of the loan in years: </h5>
+          <input name="years" type="number" />
+    
+          <input type="button" value="Calculate" onclick="calcLoan()" />
+        </form>
+      </div>
+    
+      <div class="right-side loan">
+        <p id="mpayments"></p>
+      </div>
+  
+</body>
+
+<script>
+  function calcLoan() {
+    var p = document.loanForm.amount.value;
+    var r = document.loanForm.interest.value;
+    var n = document.loanForm.years.value;
+
+    p = parseFloat(p);
+    r = parseFloat(r);
+    n = parseFloat(n);
+
+   var m = (p * r / 1200.0) / (1 - Math.pow(1.0 + r / 1200.0, -12.0 * n));
+   m = m.toFixed(2);
+   document.getElementById("mpayments").innerHTML = "Your Monthly Payment is: $" + m + "/month";
+  }
+</script>
+</html>

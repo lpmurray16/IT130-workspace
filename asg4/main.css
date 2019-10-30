@@ -1,0 +1,106 @@
+body {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1em;
+  background-color: rgb(240, 163, 47);
+  height: 100vh;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+}
+
+h2, h1 {
+  text-align: center;
+  color: beige;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #ffdb8c;
+}
+
+.nav-bar li a {
+  display: grid;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.nav-bar li a:hover {
+  background-color: rgb(172, 97, 0);
+  color: white;
+}
+
+.content {
+  background-color: rgb(255, 173, 65);
+  padding: 1em;
+}
+
+.rightSide {
+  background-color: rgb(255, 173, 65);
+  padding: 1em;
+}
+
+.alerts {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+}
+
+button {
+  background-color: rgb(87, 241, 221);
+  margin: 1em;
+  font-size: 50px;
+}
+
+button:hover {
+  background-color: rgb(240, 88, 88);
+  cursor: pointer;
+}
+.main-box{
+  grid-column: 2/4;
+}
+
+.storySpace {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 0.15fr 0.15fr 0.15fr auto;
+  grid-column: 2/4;
+  
+}
+#storyTitle {
+  font-size: 50px;
+  text-decoration: underline;
+  color: beige;
+  margin-top: -10px;
+}
+
+#storyBy {
+  margin-top: -20px;
+  color: beige;
+}
+
+#story1 {
+  text-align: center;
+  color: beige;
+  margin-top: -30px;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+#genBtn {
+  background-color: rgb(87, 241, 221);
+  margin: 1em;
+  padding: 5px;
+  font-size: 25px;
+  width: 300px;
+  margin-left: 38%;
+  margin-right: 38%;
+}

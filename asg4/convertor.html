@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css" type="text/css" />
+  <title>F to C Converter</title>
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="convertor.html"">GREETINGS</a></li>
+          <li><a href=" alerts.html">ALERTS</a></li>
+      <li><a href="story.html">STORY & CONVERSION</a></li>
+    </ul>
+  </nav>
+
+  <div class="content main-box">
+    <h1>Fahrenheit to Celsius Converter</h1>
+    <label>Fahrenheit Temp</label>
+    <input id="ftemp" type="number"></input>
+    <label>Celsius Temp</label>
+    <input id="ctemp" type="number"></input>
+    <button onclick=convertor()>Convert</button>
+    <h2 id="ans"></h2>
+
+  </div>
+
+</body>
+
+<script>
+  function convertor() {
+    var f = document.getElementById("ftemp").value;
+    var c = document.getElementById("ctemp").value;
+
+    if (f == "" && c == "") {
+      alert("At least one field must have a number");
+      document.getElementById("ans").innerHTML = "";
+    } else if (f != "" && c != "") {
+      alert("Leave a field blank for an answer.");
+      document.getElementById("ans").innerHTML = "";
+    }
+
+    if (f == "" && c != "") {
+      c = parseInt(c, 10);
+      c = c + 32;
+      console.log(typeof c);
+      console.log(c);
+      if (c != 1) {
+        document.getElementById("ans").innerHTML = "In Fahrenheit that is: " + c + " degrees";
+      } else {
+        document.getElementById("ans").innerHTML = "In Fahrenheit that is: " + c + " degree";
+      }
+    }
+
+    else if (c == "" && f != "") {
+      f = parseInt(f, 10);
+      f = f - 32;
+      if (f != 1) {
+        document.getElementById("ans").innerHTML = "In Celsius that is: " + f + " degrees";
+      } else {
+        document.getElementById("ans").innerHTML = "In Celsius that is: " + f + " degree";
+      }
+    }
+
+
+  }
+</script>
+
+</html>

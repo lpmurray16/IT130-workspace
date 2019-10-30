@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css" type="text/css" />
+  <title>Story Generator</title>
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="convertor.html">GREETINGS</a></li>
+      <li><a href="alerts.html">ALERTS</a></li>
+      <li><a href="story.html">STORY & CONVERSION</a></li>
+    </ul>
+  </nav>
+
+  <div class="content storySpace">
+    <button id="genBtn" onclick=genStory()>Generate a Madlib Story</button>
+    <h2 id="storyTitle">A Day in the Life at DePaul</h2>
+    <h2 id="storyBy">by Logan Murray</h2>
+    <p id="story1"></p>
+  </div>
+
+</body>
+
+<script>
+  function genStory() {
+    var noun = prompt("Provide a NOUN");
+    var verb = prompt("Provide a VERB");
+    var adjective = prompt("Provide an ADJECTIVE");
+    var wholeStory = "When I wake up for school I usually pack my backpack with my " + noun +". I then " + verb +
+      " my breakfast quickly, because I have to catch the train. The train ride is rather " + adjective +
+      " and I usually watch a movie or read. It takes me a long while until I'm in class at 11:50am at which point I take out my " +
+      noun + ". During class I " + verb + " and take notes. I think my IT130 class is really " + adjective + "!";
+    document.getElementById("story1").innerHTML = wholeStory;
+  }
+</script>
+
+</html>

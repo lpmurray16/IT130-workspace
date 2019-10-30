@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css" type="text/css" />
+  <title>Calc Area</title>
+</head>
+
+<body>
+  <nav class="nav-blocks">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="area.html">Area</a></li>
+      <li><a href="loan.html">Loan</a></li>
+      <li><h2>by: Logan Murray</h2></li>
+    </ul>
+  </nav>
+  
+  <h1 class="top-header">CALCULATE AREA AND PERIMETER</h1>
+  
+  <div class="left-side">
+    <form name="hwform">
+      <h5>Input a height: </h5>
+      <input name="height" type="number" />
+
+      <h5>Input a width: </h5>
+      <input name="width" type="number" />
+
+      <input type="button" value="Calculate" onclick="calc()" />
+    </form>
+  </div>
+
+  <div class="right-side">
+    <p id="area"></p>
+    <p id="perimeter"></p>
+  </div>
+
+
+
+</body>
+<script>
+  function calc() {
+    var h = document.hwform.height.value;
+    var w = document.hwform.width.value;
+    if(h == "" || w == "") {
+      alert("There needs to be both values present in order to calculate.");
+    } else {
+      h = parseFloat(h);
+      w = parseFloat(w);
+      var area = w * h;
+      area = area.toFixed(2);
+      document.getElementById("area").innerHTML = "The Area is: " + area + " sq units";
+
+      var perimeter = (2 * h) + (2 * w);
+      perimeter = perimeter.toFixed(2);
+      document.getElementById("perimeter").innerHTML = "The Perimeter is: " + perimeter + " units";
+    }
+    
+  }
+</script>
+
+</html>
